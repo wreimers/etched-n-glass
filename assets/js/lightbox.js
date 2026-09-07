@@ -1,7 +1,6 @@
 (() => {
   const tabs = [...document.querySelectorAll("[data-gallery-tab]")];
   const panels = [...document.querySelectorAll("[data-gallery-panel]")];
-  const galleryLink = document.querySelector("[data-gallery-link]");
   const heading = document.querySelector("#work-heading");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let activeCategory = "drinkware";
@@ -59,7 +58,6 @@
     });
   });
 
-  galleryLink?.addEventListener("click", () => selectCategory(galleryLink.dataset.galleryLink));
 })();
 
 (() => {
