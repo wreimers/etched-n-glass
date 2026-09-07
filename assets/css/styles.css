@@ -299,10 +299,12 @@
       width: 100%;
       max-width: none;
       height: 100%;
+      height: 100dvh;
       max-height: none;
       margin: 0;
       padding: 0;
       border: 0;
+      overflow: hidden;
       background: transparent;
       color: var(--ice);
     }
@@ -313,6 +315,8 @@
       position: relative;
       width: 100%;
       height: 100%;
+      height: 100dvh;
+      min-height: 0;
       display: grid;
       grid-template-columns: 72px minmax(0, 1fr) 72px;
       align-items: center;
@@ -321,18 +325,22 @@
 
     .lightbox figure {
       min-width: 0;
+      min-height: 0;
       height: 100%;
       margin: 0;
       display: grid;
       grid-template-rows: minmax(0, 1fr) auto;
       place-items: center;
       gap: 18px;
+      overflow: hidden;
     }
 
     .lightbox-image {
       display: block;
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
       object-fit: contain;
       box-shadow: 0 28px 90px rgba(0, 0, 0, .56);
     }
@@ -341,6 +349,7 @@
       color: #d7e8f5;
       font-family: var(--serif);
       font-size: clamp(18px, 2vw, 26px);
+      line-height: 1.25;
       text-align: center;
     }
 
@@ -472,7 +481,9 @@
       .about-intro { grid-template-columns: 1fr; gap: 46px; }
       .about-portrait-wrap { width: min(360px, 100%); }
       .about-copy h1 { font-size: clamp(48px, 15vw, 70px); }
-      .lightbox-panel { grid-template-columns: 48px minmax(0, 1fr) 48px; padding: 72px 8px 24px; }
+      .lightbox-panel { grid-template-columns: 48px minmax(0, 1fr) 48px; padding: 62px 8px 18px; }
+      .lightbox figure { gap: 12px; }
+      .lightbox-caption { font-size: clamp(16px, 5vw, 20px); }
       .lightbox-nav { width: 42px; height: 58px; }
       .lightbox-close { width: 44px; height: 44px; }
     }
