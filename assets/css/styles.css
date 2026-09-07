@@ -55,17 +55,10 @@
     }
 
     .brand-mark {
-      width: 34px;
-      aspect-ratio: 1;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(88, 232, 255, .68);
-      border-radius: 50%;
-      color: var(--cyan);
-      box-shadow: inset 0 0 14px rgba(21, 88, 255, .45), 0 0 18px rgba(88, 232, 255, .16);
-      font-family: var(--serif);
-      font-size: 15px;
-      letter-spacing: -.08em;
+      display: block;
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(0 0 9px rgba(88, 232, 255, .18));
     }
 
     nav { display: flex; align-items: center; gap: clamp(24px, 3vw, 52px); }

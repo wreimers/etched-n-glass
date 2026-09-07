@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Etched N Glass EN monogram">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#123b81"/>
+      <stop offset="0.58" stop-color="#071b43"/>
+      <stop offset="1" stop-color="#030615"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#030615"/>
+  <circle cx="32" cy="32" r="30" fill="url(#background)" stroke="#58e8ff" stroke-width="2"/>
+  <text x="32" y="40" fill="#eafaff" font-family="Georgia, 'Times New Roman', serif" font-size="23" text-anchor="middle" letter-spacing="-1.5">EN</text>
+</svg>
