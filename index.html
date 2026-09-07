@@ -6,6 +6,7 @@
   <meta name="description" content="Etched N Glass — personalized drinkware, custom etched keepsakes, and illuminated display pieces.">
   <title>Etched N Glass — Luminous Gallery</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/lightbox.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -45,24 +46,36 @@
       </div>
 
       <div class="grid">
-        <article class="work">
+        <button class="work" type="button" data-lightbox-item aria-label="View full image of His and Hers Pilsners">
           <img src="assets/images/personalized-pilsner-pair.jpg" alt="A matching pair of personalized etched pilsner glasses">
-          <div class="work-copy"><div><small>Personalized Drinkware</small><h3>His &amp; Hers Pilsners</h3><p>Matching glasses etched with playful, personalized artwork for two.</p></div><span class="work-number">01</span></div>
-        </article>
-        <article class="work">
+          <span class="work-copy"><span><small>Personalized Drinkware</small><span class="work-title">His &amp; Hers Pilsners</span><span class="work-description">Matching glasses etched with playful, personalized artwork for two.</span></span><span class="work-number">01</span></span>
+        </button>
+        <button class="work" type="button" data-lightbox-item aria-label="View full image of the Viking Beer Mug">
           <img src="assets/images/viking-beer-mug.jpg" alt="A glass beer mug etched with a Viking helmet and crossed axes">
-          <div class="work-copy"><div><small>Custom Etching</small><h3>Viking Beer Mug</h3><p>A bold Nordic design wrapped around a substantial handled glass.</p></div><span class="work-number">02</span></div>
-        </article>
-        <article class="work">
+          <span class="work-copy"><span><small>Custom Etching</small><span class="work-title">Viking Beer Mug</span><span class="work-description">A bold Nordic design wrapped around a substantial handled glass.</span></span><span class="work-number">02</span></span>
+        </button>
+        <button class="work" type="button" data-lightbox-item aria-label="View full image of the Tribute Tumbler">
           <img src="assets/images/custom-tribute-tumbler.jpg" alt="A custom tribute design etched onto a whiskey tumbler">
-          <div class="work-copy"><div><small>One-of-a-Kind Gifts</small><h3>Tribute Tumbler</h3><p>Detailed lettering and illustration turn a favorite glass into a personal keepsake.</p></div><span class="work-number">03</span></div>
-        </article>
-        <article class="work">
+          <span class="work-copy"><span><small>One-of-a-Kind Gifts</small><span class="work-title">Tribute Tumbler</span><span class="work-description">Detailed lettering and illustration turn a favorite glass into a personal keepsake.</span></span><span class="work-number">03</span></span>
+        </button>
+        <button class="work" type="button" data-lightbox-item aria-label="View full image of the Dog Silhouette Glass">
           <img src="assets/images/dog-silhouette-glass.jpg" alt="A pint glass etched with a stylized dog silhouette">
-          <div class="work-copy"><div><small>Custom Etching</small><h3>Dog Silhouette Glass</h3><p>A crisp character portrait etched for a clean, high-contrast finish.</p></div><span class="work-number">04</span></div>
-        </article>
+          <span class="work-copy"><span><small>Custom Etching</small><span class="work-title">Dog Silhouette Glass</span><span class="work-description">A crisp character portrait etched for a clean, high-contrast finish.</span></span><span class="work-number">04</span></span>
+        </button>
       </div>
     </section>
   </main>
+
+  <dialog class="lightbox" aria-label="Gallery image viewer">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="View previous image">‹</button>
+      <figure>
+        <img class="lightbox-image" src="" alt="">
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="View next image">›</button>
+    </div>
+  </dialog>
 </body>
 </html>
